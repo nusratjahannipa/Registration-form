@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/assignment2.css" />
+    <title>assignment_2</title>
+  </head>
+  <body>
+    <!-- logo -->
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <img
+              class="logo"
+              src="	https://ledp.ictd.gov.bd/global/img/ictdd.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="logo"
+              src="https://ledp.ictd.gov.bd/global/img/ledp.apng"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="logo"
+              src="https://ledp.ictd.gov.bd/global/img/mujib100.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- menu -->
+    <div class="menu_bar">
+      <nav>
+        <ul>
+          <li class="menu">Home</li>
+          <li class="menu">Course Registration</li>
+          <li class="menu">Course Module-2020</li>
+          <li class="menu">Class Schedule</li>
+          <li class="menu">Succes Story</li>
+          <li class="menu">Attendance</li>
+          <li class="menu">FAQ</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- form -->
+    <h1>Student Registration Form</h1>
+    <h2>Please enter relevent information</h2>
+    <p>Mandatory field <sup>*</sup></p>
+    <div class="form">
+      <!-- form right -->
+      <div class="right">
+        <form action="">
+          <label class="box" for="district">District(Where you want to do your course) <sup>*</sup> </label><br>
+          <select class="form-input" name="district" id="district" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Bogra">Bogra</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Dinajpur">Dinajpur</option>
+          </select><br>
+          <!-- course -->
+          <label class="box" for="course">Course<sup>*</sup> </label><br>
+          <select class="form-input" name="course" id="course" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="web">Web Development</option>
+            <option value="grapics">Grapichs Design</option>
+            <option value="design">Web Design</option>
+          </select><br>
+          <!-- student -->
+          <label  for="student">Student Name<sup>*</sup> </label><br>
+          <input class="form-input" type="text" required><br>
+          <!-- father -->
+          <label  for="Father">Father Name<sup>*</sup> </label><br>
+          <input class="form-input" type="text" required><br>
+          <!-- mother -->
+          <label  for="mother">Mother Name<sup>*</sup> </label><br>
+          <input class="form-input" type="text" required>
+          <!-- date -->
+          <fieldset>
+            <legend>Date of Birth <sup>*</sup> </legend>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" placeholder="date/month/year" required>
+          </fieldset>
+          <!-- gender -->
+          <label  for="gender">Gender<sup>*</sup>
+          <input type="radio" name="gender" id="male" required>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" required>
+          <label for="female">Female</label><br>
+          <!-- physically handicapped -->
+          <label  for="hand">Physically Handicapped<sup>*</sup>
+            <input type="radio" name="hand" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="hand" id="no">
+            <label for="no">No</label><br>
+            <!-- email -->
+            <label  for="email">Email<sup>*</sup> </label>
+          <input class="form-input" type="email" required><br>
+          <!-- phone -->
+          <label  for="number">Phone<sup>*</sup> </label>
+          <input class="form-input" type="number" maxlength="11" required>
+        </form>
+      </div>
+      <!-- form left -->
+      <div class="left">
+        <form action="">
+          <!-- identification type -->
+          <label class="box" for="card">Identification Type<sup>*</sup> </label><br>
+          <select class="form-input" name="card" id="card" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="nid">NID</option>
+            <option value="birth">Birth certificate no</option>
+            </select><br>
+            <!-- identification no -->
+            <label for="number">Identification No</label><br>
+          <input class="form-input" type="number" required><br>
+          <!-- district -->
+          <label class="box" for="district">Home District<sup>*</sup> </label><br>
+          <select class="form-input" name="district" id="district" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Bogra">Bogra</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Dinajpur">Dinajpur</option>
+          </select><br>
+          <!-- upazila -->
+          <label class="box" for="upazila">Upazila<sup>*</sup> </label><br>
+          <select class="form-input" name="upazila" id="upazila" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Bogra">Bogra</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Dinajpur">Dinajpur</option>
+          </select><br>
+          <!-- village -->
+          <label for="village">village</label><br>
+          <input class="form-input" type="text"><br>
+          <!-- post office -->
+          <label for="office">Post office</label><br>
+          <input class="form-input" type="text"><br>
+          <!-- educatinal qualification -->
+          <label for="education">Educational qualification</label><br>
+          <select class="form-input" name="education" id="education" required>
+            <option value="--Select One--">--Select One--</option>
+            <option value="hsc">HSC</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="Barishal">Phd</option>
+            <option value="Khulna">Master</option>
+         </select><br>
+         <!-- computer -->
+         <label  for="computer">Have any computer<sup>*</sup>
+          <input type="radio" name="computer" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="computer" id="no">
+          <label for="no">No</label><br>
+          <!-- photo -->
+          <label for="photo">Photo <sup>*</sup> </label>
+          <input type="file" name="photo" id="photo" placeholder="Choose file"> <br>
+          <!-- signature -->
+          <label for="signature">signature <sup>*</sup> </label>
+          <input type="file" name="signature" id="signature" placeholder="Choose file">  <br>
+          <br>
+          <button>Submit Data</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
